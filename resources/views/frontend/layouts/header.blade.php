@@ -9,14 +9,14 @@
 								<span></span>
 							</span>
 						</a>
-						<a href="index-2.html" class="navbar-brand logo">
-							<img src="frontend/assets/img/logo.png" class="img-fluid" alt="Logo">
+						<a href="{{url('/')}}" class="navbar-brand logo">
+							<img src="{{asset('frontend/assets/img/logo.png')}}" class="img-fluid" alt="Logo">
 						</a>
 					</div>
 					<div class="main-menu-wrapper">
 						<div class="menu-header">
-							<a href="index-2.html" class="menu-logo">
-								<img src="frontend/assets/img/logo.png" class="img-fluid" alt="Logo">
+							<a href="{{route('home.page')}}" class="menu-logo">
+								<img src="{{asset('frontend/assets/img/logo.png')}}" class="img-fluid" alt="Logo">
 							</a>
 							<a id="menu_close" class="menu-close" href="javascript:void(0);">
 								<i class="fas fa-times"></i>
@@ -24,12 +24,12 @@
 						</div>
 						<ul class="main-nav">
 							<li class="active">
-								<a href="index-2.html">Home</a>
+								<a href="{{route('home.page')}}">Home</a>
 							</li>
 							<li class="has-submenu">
 								<a href="#">Doctors <i class="fas fa-chevron-down"></i></a>
 								<ul class="submenu">
-									<li><a href="doctor-dashboard.html">Doctor Dashboard</a></li>
+									<li><a href="{{route('doctor.deshboard.page')}}">Doctor Dashboard</a></li>
 									<li><a href="appointments.html">Appointments</a></li>
 									<li><a href="schedule-timings.html">Schedule Timing</a></li>
 									<li><a href="my-patients.html">Patients List</a></li>
@@ -38,7 +38,7 @@
 									<li><a href="invoices.html">Invoices</a></li>
 									<li><a href="doctor-profile-settings.html">Profile Settings</a></li>
 									<li><a href="reviews.html">Reviews</a></li>
-									<li><a href="doctor-register.html">Doctor Register</a></li>
+									<li><a href="{{route('doctor.register.page')}}">Doctor Register</a></li>
 								</ul>
 							</li>	
 							<li class="has-submenu">
@@ -49,7 +49,7 @@
 									<li><a href="booking.html">Booking</a></li>
 									<li><a href="checkout.html">Checkout</a></li>
 									<li><a href="booking-success.html">Booking Success</a></li>
-									<li><a href="patient-dashboard.html">Patient Dashboard</a></li>
+									<li><a href="{{route('patient.deshboard.page')}}">Patient Dashboard</a></li>
 									<li><a href="favourites.html">Favourites</a></li>
 									<li><a href="chat.html">Chat</a></li>
 									<li><a href="profile-settings.html">Profile Settings</a></li>
@@ -72,7 +72,7 @@
 										</ul>
 									</li>
 									<li><a href="blank-page.html">Starter Page</a></li>
-									<li><a href="login.html">Login</a></li>
+									<li><a href="{{route('login.page')}}">Login</a></li>
 									<li><a href="register.html">Register</a></li>
 									<li><a href="forgot-password.html">Forgot Password</a></li>
 								</ul>
@@ -81,7 +81,7 @@
 								<a href="admin/index.html" target="_blank">Admin</a>
 							</li>
 							<li class="login-link">
-								<a href="login.html">Login / Signup</a>
+								<a href="{{route('login.page')}}">Login / Signup</a>
 							</li>
 						</ul>		 
 					</div>		 
@@ -96,7 +96,7 @@
 							</div>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link header-login" href="login.html">login / Signup </a>
+							<a class="nav-link header-login" href="{{route('login.page')}}">login / Signup </a>
 						</li>
 					</ul>
 				</nav>
